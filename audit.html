@@ -1,93 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audit Gratuit de vos Contrats - CCAK Assurances</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <style>
-        .audit-hero { padding: 80px 0; background: var(--primary-color); color: #fff; text-align: center; }
-        .audit-hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
-        .audit-content { padding: 80px 0; }
-        .audit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
-        .audit-features li { margin-bottom: 20px; display: flex; align-items: center; font-size: 1.1rem; }
-        .audit-features i { color: var(--secondary-color); margin-right: 15px; font-size: 1.5rem; }
-        .audit-form { background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
-        @media (max-width: 768px) { .audit-grid { grid-template-columns: 1fr; } }
+      .audit-hero {
+        padding: 80px 0;
+        background: var(--primary-color);
+        color: #fff;
+        text-align: center;
+      }
+      .audit-hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      .audit-content {
+        padding: 80px 0;
+      }
+      .audit-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+      }
+      .audit-features li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+      }
+      .audit-features i {
+        color: var(--secondary-color);
+        margin-right: 15px;
+        font-size: 1.5rem;
+      }
+      .audit-form {
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+      @media (max-width: 768px) {
+        .audit-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <div class="container header-flex">
-            <div class="logo">
-                 <img src="assets/logos/logo1.jpg" alt="">
-            </div>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="cabinet.html">Le Cabinet</a></li>
-                    <li><a href="solutions.html">Nos Solutions</a></li>
-                    <li><a href="devis.html">Demande de Devis</a></li>
-                    <li><a href="audit.html" class="active">Audit Gratuit</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </nav>
+      <div class="container header-flex">
+        <div class="logo">
+          <img src="assets/logos/logo1.jpg" alt="" />
         </div>
+        <nav>
+          <ul id="nav-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cabinet.html">Le Cabinet</a></li>
+            <li><a href="solutions.html">Nos Solutions</a></li>
+            <li><a href="devis.html">Demande de Devis</a></li>
+            <li><a href="audit.html" class="active">Audit Gratuit</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="audit-hero">
-        <div class="container">
-            <h1>Audit Gratuit de Vos Contrats d'Assurance</h1>
-            <p>Optimisez votre protection et réduisez vos coûts grâce à l'expertise CCAK.</p>
-        </div>
+      <div class="container">
+        <h1>Audit Gratuit de Vos Contrats d'Assurance</h1>
+        <p>
+          Optimisez votre protection et réduisez vos coûts grâce à l'expertise
+          CCAK.
+        </p>
+      </div>
     </section>
 
     <section class="audit-content">
-        <div class="container">
-            <div class="audit-grid">
-                <div class="audit-info">
-                    <h2>Pourquoi demander un audit ?</h2>
-                    <p>Nos experts analysent gratuitement vos contrats actuels afin d'identifier les points d'amélioration possibles pour votre organisation ou votre famille.</p>
-                    <ul class="audit-features">
-                        <li><i class="fas fa-search"></i> Identifier les garanties insuffisantes</li>
-                        <li><i class="fas fa-copy"></i> Détecter les doublons inutiles</li>
-                        <li><i class="fas fa-chart-line"></i> Trouver des opportunités d'optimisation</li>
-                        <li><i class="fas fa-piggy-bank"></i> Réaliser des économies substantielles</li>
-                    </ul>
-                </div>
-                <div class="audit-form">
-                    <h3>Demander mon audit</h3>
-                    <form action="https://formspree.io/f/xbglrqkd" method="POST">
-  <input type="hidden" name="_subject" value="Nouveau message depuis le site CCAK">
+      <div class="container">
+        <div class="audit-grid">
+          <div class="audit-info">
+            <h2>Pourquoi demander un audit ?</h2>
+            <p>
+              Nos experts analysent gratuitement vos contrats actuels afin
+              d'identifier les points d'amélioration possibles pour votre
+              organisation ou votre famille.
+            </p>
+            <ul class="audit-features">
+              <li>
+                <i class="fas fa-search"></i> Identifier les garanties
+                insuffisantes
+              </li>
+              <li>
+                <i class="fas fa-copy"></i> Détecter les doublons inutiles
+              </li>
+              <li>
+                <i class="fas fa-chart-line"></i> Trouver des opportunités
+                d'optimisation
+              </li>
+              <li>
+                <i class="fas fa-piggy-bank"></i> Réaliser des économies
+                substantielles
+              </li>
+            </ul>
+          </div>
+          <div class="audit-form">
+            <h3>Demander mon audit</h3>
+            <form
+              id="audit-form"
+              action="https://formspree.io/f/xbglrqkd"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nouvelle demande d'audit gratuit - CCAK Assurances"
+              />
 
-  <div class="form-row">
-    <input type="text" name="nom" placeholder="Nom complet" required>
-    <input type="email" name="email" placeholder="Email" required>
-  </div>
+              <input
+                type="text"
+                name="nom_ou_raison_sociale"
+                placeholder="Nom complet / Raison sociale"
+                required
+              />
 
-  <input type="text" name="sujet" placeholder="Sujet" required>
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="Téléphone"
+                required
+              />
 
-  <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+              <input type="email" name="email" placeholder="Email" required />
 
-  <button type="submit" class="btn btn-primary">Envoyer le message</button>
-</form>
+              <input
+                type="text"
+                name="entreprise"
+                placeholder="Entreprise (optionnel )"
+              />
 
-                </div>
-            </div>
+              <div style="margin-bottom: 15px">
+                <label for="contrats">
+                  Télécharger vos contrats existants (optionnel)
+                </label>
+
+                <input type="file" name="contrats" id="contrats" multiple />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                DEMANDER MON AUDIT GRATUIT
+              </button>
+
+              <p
+                id="audit-success"
+                style="display: none; color: green; margin-top: 15px"
+              >
+                Votre demande d'audit a bien été envoyée.
+              </p>
+
+              <p
+                id="audit-error"
+                style="display: none; color: red; margin-top: 15px"
+              >
+                Une erreur est survenue. Veuillez réessayer.
+              </p>
+            </form>
+
+            <script>
+              document
+                .getElementById("audit-form")
+                .addEventListener("submit", async function (event) {
+                  event.preventDefault();
+
+                  const form = event.target;
+                  const button = form.querySelector("button[type='submit']");
+                  const successMessage =
+                    document.getElementById("audit-success");
+                  const errorMessage = document.getElementById("audit-error");
+
+                  button.disabled = true;
+                  button.textContent = "Envoi en cours...";
+                  successMessage.style.display = "none";
+                  errorMessage.style.display = "none";
+
+                  try {
+                    const response = await fetch(form.action, {
+                      method: "POST",
+                      body: new FormData(form),
+                      headers: {
+                        Accept: "application/json",
+                      },
+                    });
+
+                    if (response.ok) {
+                      form.reset();
+                      successMessage.style.display = "block";
+                      button.textContent = "Demande envoyée";
+                    } else {
+                      throw new Error("Erreur Formspree");
+                    }
+                  } catch (error) {
+                    errorMessage.style.display = "block";
+                    button.disabled = false;
+                    button.textContent = "DEMANDER MON AUDIT GRATUIT";
+                  }
+                });
+            </script>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 CCAK Assurances. Tous droits réservés.</p>
-            </div>
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; 2026 CCAK Assurances. Tous droits réservés.</p>
         </div>
+      </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
