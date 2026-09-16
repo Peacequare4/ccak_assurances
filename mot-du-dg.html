@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot du Directeur Général - CCAK Assurances</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .dg-section { padding: 100px 0; }
+        .dg-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: start; }
+        .dg-img img { border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .dg-text h2 { color: var(--primary-color); margin-bottom: 25px; font-size: 2.2rem; }
+        .dg-text p { margin-bottom: 20px; font-size: 1.05rem; color: var(--accent-color); }
+        .dg-signature { margin-top: 40px; }
+        .dg-signature h4 { color: var(--primary-color); font-size: 1.2rem; }
+        .dg-signature span { color: var(--secondary-color); font-weight: 600; }
+        .experience-box { background: var(--light-bg); padding: 40px; border-radius: 10px; margin-top: 50px; }
+        .experience-box h3 { color: var(--primary-color); margin-bottom: 25px; }
+        .exp-list li { margin-bottom: 15px; display: flex; align-items: center; }
+        .exp-list i { color: var(--secondary-color); margin-right: 15px; }
+        @media (max-width: 768px) { .dg-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar & Header (Same as index.html) -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">CCAK<span> ASSURANCES</span></span></a>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="cabinet.html" class="active">Le cabinet <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cabinet.html#qui-sommes-nous">Qui sommes-nous ?</a></li>
+                            <li><a href="mot-du-dg.html">Mot du DG</a></li>
+                            <li><a href="cabinet.html#equipe">Notre équipe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="solutions.html">Nos solutions</a></li>
+                    <li><a href="devis.html">Demande de Devis</a></li>
+                    <li><a href="audit.html">Audit gratuit</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="dg-section">
+        <div class="container">
+            <div class="dg-grid">
+                <div class="dg-img">
+                    <!-- Placeholder for DG Photo -->
+                    <div style="background: #ddd; height: 400px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/pdg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="dg-text">
+                    <h2>Mot du Directeur Général</h2>
+                    <p>Bienvenue sur le site de CCAK Assurances.</p>
+                    <p>Le secteur des assurances joue un rôle essentiel dans la protection des personnes, des entreprises et des institutions. Pourtant, de nombreux assurés restent confrontés à des difficultés liées au choix des garanties, à la compréhension des contrats ou encore à la gestion des sinistres.</p>
+                    <p>C'est pour répondre à ces défis que nous avons créé CCAK Assurances. Notre ambition est de mettre notre expérience et notre expertise au service de nos clients afin de leur apporter des solutions adaptées, des conseils objectifs et un accompagnement permanent.</p>
+                    <p>Après plus de deux décennies d'expérience acquises au sein de sociétés d'assurances de premier plan telles que STAR Nationale, STAR Vie et SUNU Assurances, nous avons souhaité créer un cabinet capable de défendre les intérêts des assurés et de leur offrir un service personnalisé.</p>
+                    <div class="dg-signature">
+                        <h4>Mathias NADJIADOUM KOULENGAR</h4>
+                        <span>Directeur Général</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-box">
+                <h3>Une expertise bâtie sur plus de 25 ans d'expérience</h3>
+                <p>Titulaire de Diplôme d'Etudes Supérieures Spécialisées en Assurances(DESS-A) obtenus à l'Institut International des Assurances de Yaoundé, M. Mathias NADJIADOUM KOULENGAR possède une expérience solide couvrant :</p>
+                <br>
+                <ul class="exp-list">
+                    <li><i class="fas fa-check-circle"></i> Assurance Santé & Prévoyance</li>
+                    <li><i class="fas fa-check-circle"></i> Assurance Automobile</li>
+                    <li><i class="fas fa-check-circle"></i> Décès Emprunteur & Retraite Complémentaire</li>
+                    <li><i class="fas fa-check-circle"></i> Indemnités de Fin de Carrière (IFC)</li>
+                    <li><i class="fas fa-check-circle"></i> Gestion des Sinistres & Développement Commercial</li>
+                    <li><i class="fas fa-check-circle"></i> Conseil aux entreprises et institutions</li>
+                    <li><i class="fas fa-check-circle"></i> Formation en Assurances</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CCAK Assurances. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

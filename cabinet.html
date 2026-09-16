@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Cabinet - CCAK Assurances</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .page-header { padding: 60px 0; background: var(--light-bg); border-bottom: 1px solid #eee; }
+        .content-section { padding: 80px 0; }
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 40px; }
+        .value-card { text-align: center; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .value-card i { font-size: 2rem; color: var(--secondary-color); margin-bottom: 15px; }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .team-card { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; }
+        .team-card h4 { color: var(--primary-color); margin-bottom: 5px; }
+        .team-card span { color: var(--secondary-color); font-weight: 600; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="assets/logos/logo1.jpg" alt="">
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="cabinet.html" class="active">Le Cabinet <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
+                            <li><a href="mot-du-dg.html">Mot du DG</a></li>
+                            <li><a href="#equipe">Notre Équipe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="solutions.html">Nos Solutions</a></li>
+                    <li><a href="devis.html">Demande de Devis</a></li>
+                    <li><a href="audit.html">Audit Gratuit</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Le Cabinet CCAK Assurances</h1>
+            <p>Une expertise indépendante au service de votre protection.</p>
+        </div>
+    </section>
+
+    <section id="qui-sommes-nous" class="content-section">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-text">
+                    <h2>Qui sommes-nous ?</h2>
+                    <p>Le Cabinet de Conseils et Courtage en Assurances Keylo (CCAK Assurances) est un cabinet spécialisé dans le conseil, le courtage et l'accompagnement en assurances.</p>
+                    <p>Fondé en 2023, il est agréé par le Ministère des Finances, du Budget et des Comptes Publics suivant l'Arrêté n°118/PT/PMT/MFBCP/SE/SG/DGTCP/DNA/2023 du 15 novembre 2023. CCAK met son expertise au service des particuliers, des entreprises, des ONG et des institutions afin de leur offrir des solutions d'assurance fiables, adaptées et conformes à la réglementation CIMA.</p>
+                </div>
+                <div class="why-img">
+                    <img src="assets/images/about1.jpg" alt="CCAK Presentation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-text">
+                    <h2>NOTRE MISSION</h2>
+                    <p>Accompagner nos clients dans la protection de leurs activités, de leurs biens et de leurs collaborateurs grâce à des solutions d'assurances adaptées, performantes et conformes à leurs besoins.</p>
+                </div>
+                <div class="why-text">
+                    <h2>NOTRE VISION</h2>
+                    <p>Devenir la référence du conseil et du courtage en assurances au Tchad et dans la sous-région grâce à la qualité de nos services, notre expertise et notre engagement auprès de nos clients.</p>
+                </div>
+            </div>
+
+            <h2 class="text-center mt-40">NOS VALEURS</h2>
+            <div class="values-grid">
+                <div class="value-card"><i class="fas fa-balance-scale"></i><h4>Intégrité</h4><p>Honnêteté et transparence.</p></div>
+                <div class="value-card"><i class="fas fa-user-tie"></i><h4>Professionnalisme</h4><p>Respect des standards.</p></div>
+                <div class="value-card"><i class="fas fa-users"></i><h4>Proximité</h4><p>À l'écoute des clients.</p></div>
+                <div class="value-card"><i class="fas fa-star"></i><h4>Excellence</h4><p>Amélioration constante.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="content-section">
+        <div class="container">
+            <h2 class="text-center">Une équipe engagée à vos côtés</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>Direction Générale</h4>
+                    <span>Mathias KOULENGAR</span>
+                    <p>Pilotage stratégique et supervision générale.</p>
+                </div>
+                <div class="team-card">
+                    <h4>Responsable Commercial</h4>
+                    <span>Développement</span>
+                    <p>Animation du réseau et accompagnement clients.</p>
+                </div>
+                <div class="team-card">
+                    <h4>Administration & Gestion</h4>
+                    <span>Suivi Opérationnel</span>
+                    <p>Gestion financière et administrative.</p>
+                </div>
+                <div class="team-card">
+                    <h4>Conseillers</h4>
+                    <span>Expertise Conseil</span>
+                    <p>Prospection et suivi des contrats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CCAK Assurances. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

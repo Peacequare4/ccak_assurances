@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Solutions - CCAK Assurances</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .solutions-hero { padding: 60px 0; background: var(--secondary-color); color: #fff; text-align: center; }
+        .solution-section { padding: 80px 0; }
+        .solution-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .solution-card { background: #fff; border: 1px solid #eee; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .solution-card-body { padding: 30px; }
+        .solution-card-body h4 { color: var(--primary-color); margin-bottom: 15px; }
+        .solution-card-body ul { margin-top: 15px; }
+        .solution-card-body li { margin-bottom: 8px; font-size: 0.9rem; display: flex; align-items: center; }
+        .solution-card-body i { color: var(--secondary-color); margin-right: 10px; }
+        .method-step { text-align: center; position: relative; }
+        .method-step::after { content: '↓'; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); font-size: 1.5rem; color: var(--secondary-color); }
+        .method-step:last-child::after { display: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="assets/logos/logo1.jpg" alt="">
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cabinet.html">Le Cabinet</a></li>
+                    <li><a href="solutions.html" class="active">Nos Solutions</a></li>
+                    <li><a href="devis.html">Demande de Devis</a></li>
+                    <li><a href="audit.html">Audit Gratuit</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="solutions-hero">
+        <div class="container">
+            <h1>Nos Solutions d'Assurances</h1>
+            <p>Des couvertures sur mesure pour chaque profil et chaque besoin.</p>
+        </div>
+    </section>
+
+    <section id="particuliers" class="solution-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pour les Particuliers</h2>
+            </div>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="solution-card-body">
+                        <i class="fas fa-car fa-2x"></i>
+                        <h4>Assurance Automobile</h4>
+                        <p>Protégez votre véhicule et votre responsabilité. Garanties : RC, Vol, Incendie, Bris de glace, Dommages tous accidents.</p>
+                        <a href="devis.html" class="btn btn-primary mt-20">Demander un devis</a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-card-body">
+                        <i class="fas fa-heartbeat fa-2x"></i>
+                        <h4>Assurance Santé</h4>
+                        <p>Préservez votre santé et celle de votre famille. Accès facilité aux soins et réduction des dépenses médicales.</p>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-card-body">
+                        <i class="fas fa-plane fa-2x"></i>
+                        <h4>Assurance Voyage</h4>
+                        <p>Voyagez en toute sérénité (Étudiants, Professionnels, Touristes). Assistance et rapatriement sanitaire.</p>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-card-body">
+                        <i class="fas fa-plane fa-2x"></i>
+                        <h4>Assurance Multirisque Habitation</h4>
+                        <p>Voyagez en toute sérénité (Étudiants, Professionnels, Touristes). Assistance et rapatriement sanitaire.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="entreprises" class="solution-section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pour les Entreprises & ONG</h2>
+            </div>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="solution-card-body">
+                        <h4>Protection du Personnel</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Santé Collective</li>
+                            <li><i class="fas fa-check"></i> Groupe Décès</li>
+                            <li><i class="fas fa-check"></i> Individuelle Accident</li>
+                            <li><i class="fas fa-check"></i> Retraite Complémentaire / IFC</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-card-body">
+                        <h4>Protection des Actifs</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Flotte Automobile</li>
+                            <li><i class="fas fa-check"></i> Multirisque Professionnelle</li>
+                            <li><i class="fas fa-check"></i> Assurance Construction / BTP</li>
+                            <li><i class="fas fa-check"></i> Assurance Transport</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-card-body">
+                        <h4>Responsabilité</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> RC Générale & Professionnelle</li>
+                            <li><i class="fas fa-check"></i> Responsabilité des Dirigeants</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solution-section">
+        <div class="container">
+            <h2 class="text-center">Notre méthode d'accompagnement</h2>
+            <div class="services-grid mt-40">
+                <div class="method-step"><h4>1. Analyse</h4><p>Identification des risques et besoins.</p></div>
+                <div class="method-step"><h4>2. Étude</h4><p>Consultation de nos partenaires assureurs.</p></div>
+                <div class="method-step"><h4>3. Comparaison</h4><p>Analyse des garanties et des coûts.</p></div>
+                <div class="method-step"><h4>4. Recommandation</h4><p>Présentation des solutions pertinentes.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CCAK Assurances. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

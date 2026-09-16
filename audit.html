@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Gratuit de vos Contrats - CCAK Assurances</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .audit-hero { padding: 80px 0; background: var(--primary-color); color: #fff; text-align: center; }
+        .audit-hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .audit-content { padding: 80px 0; }
+        .audit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .audit-features li { margin-bottom: 20px; display: flex; align-items: center; font-size: 1.1rem; }
+        .audit-features i { color: var(--secondary-color); margin-right: 15px; font-size: 1.5rem; }
+        .audit-form { background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        @media (max-width: 768px) { .audit-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                 <img src="assets/logos/logo1.jpg" alt="">
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cabinet.html">Le Cabinet</a></li>
+                    <li><a href="solutions.html">Nos Solutions</a></li>
+                    <li><a href="devis.html">Demande de Devis</a></li>
+                    <li><a href="audit.html" class="active">Audit Gratuit</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="audit-hero">
+        <div class="container">
+            <h1>Audit Gratuit de Vos Contrats d'Assurance</h1>
+            <p>Optimisez votre protection et réduisez vos coûts grâce à l'expertise CCAK.</p>
+        </div>
+    </section>
+
+    <section class="audit-content">
+        <div class="container">
+            <div class="audit-grid">
+                <div class="audit-info">
+                    <h2>Pourquoi demander un audit ?</h2>
+                    <p>Nos experts analysent gratuitement vos contrats actuels afin d'identifier les points d'amélioration possibles pour votre organisation ou votre famille.</p>
+                    <ul class="audit-features">
+                        <li><i class="fas fa-search"></i> Identifier les garanties insuffisantes</li>
+                        <li><i class="fas fa-copy"></i> Détecter les doublons inutiles</li>
+                        <li><i class="fas fa-chart-line"></i> Trouver des opportunités d'optimisation</li>
+                        <li><i class="fas fa-piggy-bank"></i> Réaliser des économies substantielles</li>
+                    </ul>
+                </div>
+                <div class="audit-form">
+                    <h3>Demander mon audit</h3>
+                    <form>
+                        <input type="text" placeholder="Nom complet / Raison Sociale" required>
+                        <input type="tel" placeholder="Téléphone" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Entreprise (optionnel)">
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: block; font-size: 0.9rem; margin-bottom: 5px;">Télécharger vos contrats existants (Optionnel)</label>
+                            <input type="file" multiple>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">DEMANDER MON AUDIT GRATUIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CCAK Assurances. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
