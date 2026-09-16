@@ -47,63 +47,254 @@
             </div>
 
             <div class="form-container">
-                <form action="https://formspree.io/f/xbglrqkd" method="POST">
-                    <h4 class="form-section-title">Informations Personnelles</h4>
-                    <div class="form-row">
-                        <input type="text" placeholder="Nom" required>
-                        <input type="text" placeholder="Prénom" required>
-                    </div>
-                    <div class="form-row">
-                        <input type="tel" placeholder="Téléphone" required>
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-row">
-                        <input type="text" placeholder="Ville" required>
-                        <input type="text" placeholder="Profession" required>
-                    </div>
+                <form
+    action="https://formspree.io/f/xbglrqkd"
+    method="POST"
+    enctype="multipart/form-data"
+>
+    <!-- Objet de l'e-mail reçu -->
+    <input
+        type="hidden"
+        name="_subject"
+        value="Nouvelle demande de devis automobile - CCAK Assurances"
+    >
 
-                    <h4 class="form-section-title">Informations du Véhicule</h4>
-                    <div class="form-row">
-                        <input type="text" placeholder="Marque" >
-                        <input type="text" placeholder="Modèle">
-                    </div>
-                    <div class="form-row">
-                        <input type="number" placeholder="Année de mise en circulation">
-                        <input type="text" placeholder="Valeur estimée">
-                    </div>
-                    <div class="form-row">
-                        <input type="text" placeholder="Immatriculation" required>
-                        <input type="text" placeholder="Numéro Châssis" required>
-                    </div>
-        
+    <h4 class="form-section-title">Informations personnelles</h4>
 
-                    <h4 class="form-section-title">Garanties Souhaitées</h4>
-                    <div class="checkbox-group">
-                        <div class="checkbox-item"><input type="checkbox" checked disabled id="rc"> <label for="rc">Responsabilité Civile (Obligatoire)</label></div>
-                        <div class="checkbox-item"><input type="checkbox" id="dr"> <label for="dr">Défense et Recours</label></div>
-                        <div class="checkbox-item"><input type="checkbox" id="incendie"> <label for="incendie">Incendie</label></div>
-                        <div class="checkbox-item"><input type="checkbox" id="vol"> <label for="vol">Vol</label></div>
-                        <div class="checkbox-item"><input type="checkbox" id="bris"> <label for="bris">Bris de Glace</label></div>
-                        <div class="checkbox-item"><input type="checkbox" id="dommages"> <label for="dommages">Dommages Tous Accidents</label></div>
-                        <div class="checkbox-item"><input type="checkbox" id="assistance"> <label for="assistance">Assistance</label></div>
-                    </div>
+    <div class="form-row">
+        <input
+            type="text"
+            name="nom"
+            placeholder="Nom"
+            required
+        >
 
-                    <h4 class="form-section-title">Documents à joindre</h4>
-                    <div class="file-input-group">
-                        <label>Carte grise (Image ou PDF)</label>
-                        <input type="file" required>
-                    </div>
-                    <div class="file-input-group">
-                        <label>Permis de conduire</label>
-                        <input type="file">
-                    </div>
-                    <div class="file-input-group">
-                        <label>Pièce d'identité</label>
-                        <input type="file">
-                    </div>
+        <input
+            type="text"
+            name="prenom"
+            placeholder="Prénom"
+            required
+        >
+    </div>
 
-                    <button type="submit" class="btn btn-primary btn-block" style="width: 100%; margin-top: 30px;">DEMANDER MON DEVIS</button>
-                </form>
+    <div class="form-row">
+        <input
+            type="tel"
+            name="telephone"
+            placeholder="Téléphone"
+            required
+        >
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+        >
+    </div>
+
+    <div class="form-row">
+        <input
+            type="text"
+            name="ville"
+            placeholder="Ville"
+            required
+        >
+
+        <input
+            type="text"
+            name="profession"
+            placeholder="Profession"
+            required
+        >
+    </div>
+
+    <h4 class="form-section-title">Informations du véhicule</h4>
+
+    <div class="form-row">
+        <input
+            type="text"
+            name="marque"
+            placeholder="Marque"
+        >
+
+        <input
+            type="text"
+            name="modele"
+            placeholder="Modèle"
+        >
+    </div>
+
+    <div class="form-row">
+        <input
+            type="number"
+            name="annee_mise_en_circulation"
+            placeholder="Année de mise en circulation"
+        >
+
+        <input
+            type="text"
+            name="valeur_estimee"
+            placeholder="Valeur estimée"
+        >
+    </div>
+
+    <div class="form-row">
+        <input
+            type="text"
+            name="immatriculation"
+            placeholder="Immatriculation"
+            required
+        >
+
+        <input
+            type="text"
+            name="numero_chassis"
+            placeholder="Numéro de châssis"
+            required
+        >
+    </div>
+
+    <h4 class="form-section-title">Garanties souhaitées</h4>
+
+    <div class="checkbox-group">
+        <div class="checkbox-item">
+            <input
+                type="checkbox"
+                name="garantie_responsabilite_civile"
+                value="Oui"
+                id="rc"
+                checked
+            >
+            <label for="rc">
+                Responsabilité civile obligatoire
+            </label>
+        </div>
+
+        <div class="checkbox-item">
+            <input
+                type="checkbox"
+                name="garantie_defense_recours"
+                value="Oui"
+                id="dr"
+            >
+            <label for="dr">
+                Défense et recours
+            </label>
+        </div>
+
+        <div class="checkbox-item">
+            <input
+                type="checkbox"
+                name="garantie_incendie"
+                value="Oui"
+                id="incendie"
+            >
+            <label for="incendie">
+                Incendie
+            </label>
+        </div>
+
+        <div class="checkbox-item">
+            <input
+                type="checkbox"
+                name="garantie_vol"
+                value="Oui"
+                id="vol"
+            >
+            <label for="vol">
+                Vol
+            </label>
+        </div>
+
+        <div class="checkbox-item">
+            <input
+                type="checkbox"
+                name="garantie_bris_de_glace"
+                value="Oui"
+                id="bris"
+            >
+            <label for="bris">
+                Bris de glace
+            </label>
+        </div>
+
+        <div class="checkbox-item">
+            <input
+                type="checkbox"
+                name="garantie_dommages_tous_accidents"
+                value="Oui"
+                id="dommages"
+            >
+            <label for="dommages">
+                Dommages tous accidents
+            </label>
+        </div>
+
+        <div class="checkbox-item">
+            <input
+                type="checkbox"
+                name="garantie_assistance"
+                value="Oui"
+                id="assistance"
+            >
+            <label for="assistance">
+                Assistance
+            </label>
+        </div>
+    </div>
+
+    <h4 class="form-section-title">Documents à joindre</h4>
+
+    <div class="file-input-group">
+        <label for="carte_grise">
+            Carte grise — image ou PDF
+        </label>
+
+        <input
+            type="file"
+            name="carte_grise"
+            id="carte_grise"
+            accept=".jpg,.jpeg,.png,.pdf"
+            required
+        >
+    </div>
+
+    <div class="file-input-group">
+        <label for="permis_conduire">
+            Permis de conduire
+        </label>
+
+        <input
+            type="file"
+            name="permis_conduire"
+            id="permis_conduire"
+            accept=".jpg,.jpeg,.png,.pdf"
+        >
+    </div>
+
+    <div class="file-input-group">
+        <label for="piece_identite">
+            Pièce d'identité
+        </label>
+
+        <input
+            type="file"
+            name="piece_identite"
+            id="piece_identite"
+            accept=".jpg,.jpeg,.png,.pdf"
+        >
+    </div>
+
+    <button
+        type="submit"
+        class="btn btn-primary btn-block"
+        style="width: 100%; margin-top: 30px;"
+    >
+        DEMANDER MON DEVIS
+    </button>
+</form>
+
             </div>
         </div>
     </section>
